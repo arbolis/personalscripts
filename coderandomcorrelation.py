@@ -1,4 +1,4 @@
-import statistics as statistics
+import statistics as stas
 import numpy as np
 from scipy.stats.stats import pearsonr
 junk_list = []
@@ -19,5 +19,7 @@ for line in time_2:
     time_3.append(int(line))
 
 print(pearsonr(nodes_3, time_3))
-
-
+print(np.mean(nodes_3))
+print(stas.stdev(nodes_3))
+print(np.mean(time_3))
+print(stas.stdev(time_3))
