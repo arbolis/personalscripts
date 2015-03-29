@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import statistics as stas
 import numpy as np
 from scipy.stats.stats import pearsonr
@@ -23,3 +24,5 @@ print(np.mean(nodes_3))
 print(stas.stdev(nodes_3))
 print(np.mean(time_3))
 print(stas.stdev(time_3))
+
+plt.plot(nodes_3, 'r', linewidth=3, label='n° of total nodes')
