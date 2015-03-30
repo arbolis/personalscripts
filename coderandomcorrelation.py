@@ -28,3 +28,7 @@ print(stas.stdev(time_3))
 plt.plot(nodes_3, 'r', linewidth=3, label='n° of total nodes')
 plt.grid()
 plt.show()
+
+# Now formatting to be R language friendly
+with open('large_list.txt', 'w') as ll:
+    ll.write('\n'.join(map(str, nodes_3)))
