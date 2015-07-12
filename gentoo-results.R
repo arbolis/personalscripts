@@ -1,0 +1,6 @@
+#library(ggplot2)
+setwd("~/Documents/personalscripts")
+gentoo <- read.table("output3.txt")
+#plot(gentoo$V2)
+summary(gentoo)
+hist(gentoo$V1, breaks=8000, xlim=c(0,200), xlab="compilation time [s]",ylab="# of packages", main="Gentoo's packages compilation time", las=1, col="purple")
